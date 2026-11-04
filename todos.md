@@ -1,0 +1,28 @@
+- [x] Create a new iOS app in Swift
+- [x] Name the app **Finanzen**
+- [x] Set German as the primary language
+- [x] Use navy blue as the accent color
+- [x] Create an app icon with a navy blue background and a bunch of money
+- [x] Add a `TabView`
+  - [x] First tab: **My budget for today**
+  - [x] Second tab: **Monthly budget**, which the user can set each month
+  - [x] Third tab: **Settings**, including a theme switch
+- [x] Carry any unspent daily budget forward and spread it across the remaining days of the month (e.g. if the monthly base budget is €300 and €10 goes unspent today, distribute that €10 over the remaining days)
+- [x] Let users record spending manually
+  - [x] Enter an amount for each spending entry
+  - [x] Assign an optional category
+  - [x] Add an optional note
+- [x] Allow spending entries to be edited and deleted
+- [x] Add a history view for past spending, days, and months
+- [x] Save budgets and spending locally on the device, without requiring an account or cloud sync
+- [x] Calculate the available daily budget by dividing the remaining monthly budget by the remaining days in the month, and recalculate as spending is recorded
+- [x] Let users choose the app appearance: follow the system, light mode, or dark mode
+- [x] Make the daily budget easier to understand
+  - [x] Show today's starting limit, today's spending, and the remaining amount separately
+  - [x] Clearly show a negative remaining amount when the daily limit is exceeded
+  - [x] Show the recalculated daily budget for tomorrow
+- [x] Add a visual monthly budget progress indicator showing spending and remaining funds
+- [x] Remind users to set their monthly budget
+- [x] If no budget has been set for the selected month, ask the user to set one before showing the rest of that month's budget screen
+
+## Planned improvements

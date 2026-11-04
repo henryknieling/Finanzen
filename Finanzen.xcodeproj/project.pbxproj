@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20000000000000000000001 /* FinanzenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* FinanzenApp.swift */; };
+		A20000000000000000000002 /* FinanceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* FinanceStore.swift */; };
+		A20000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* ContentView.swift */; };
+		A20000000000000000000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* Assets.xcassets */; };
+		A20000000000000000000005 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* TodayView.swift */; };
+		A20000000000000000000006 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* MonthView.swift */; };
+		A20000000000000000000007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* SettingsView.swift */; };
+		A20000000000000000000010 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* Expense.swift */; };
+		A20000000000000000000011 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* AppTheme.swift */; };
+		A20000000000000000000012 /* TodayExpenseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* TodayExpenseEntry.swift */; };
+		A20000000000000000000013 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* HistoryView.swift */; };
+		A20000000000000000000014 /* ExpenseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* ExpenseRow.swift */; };
+		A20000000000000000000015 /* ExpenseEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* ExpenseEditorView.swift */; };
+		A20000000000000000000016 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* TodayViewModel.swift */; };
+		A20000000000000000000017 /* MonthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* MonthViewModel.swift */; };
+		A20000000000000000000018 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* SettingsViewModel.swift */; };
+		A20000000000000000000019 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* HistoryViewModel.swift */; };
+		A20000000000000000000020 /* ExpenseEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* ExpenseEditorViewModel.swift */; };
+		A20000000000000000000021 /* BudgetReminderScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* BudgetReminderScheduler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* Finanzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finanzen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000002 /* FinanzenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanzenApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* FinanceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceStore.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000006 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A10000000000000000000011 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		A10000000000000000000013 /* TodayExpenseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayExpenseEntry.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A10000000000000000000015 /* ExpenseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRow.swift; sourceTree = "<group>"; };
+		A10000000000000000000016 /* ExpenseEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEditorView.swift; sourceTree = "<group>"; };
+		A10000000000000000000017 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000018 /* MonthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000019 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000020 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000021 /* ExpenseEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEditorViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000022 /* BudgetReminderScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetReminderScheduler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30000000000000000000001 /* Finanzen */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000002 /* FinanzenApp.swift */,
+				A30000000000000000000003 /* Models */,
+				A30000000000000000000004 /* Views */,
+				A30000000000000000000008 /* ViewModels */,
+				A30000000000000000000009 /* Services */,
+				A10000000000000000000005 /* Assets.xcassets */,
+			);
+			path = Finanzen;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* FinanceStore.swift */,
+				A10000000000000000000011 /* Expense.swift */,
+				A10000000000000000000012 /* AppTheme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000004 /* ContentView.swift */,
+				A10000000000000000000006 /* TodayView.swift */,
+				A10000000000000000000007 /* MonthView.swift */,
+				A10000000000000000000008 /* SettingsView.swift */,
+				A10000000000000000000013 /* TodayExpenseEntry.swift */,
+				A10000000000000000000014 /* HistoryView.swift */,
+				A10000000000000000000015 /* ExpenseRow.swift */,
+				A10000000000000000000016 /* ExpenseEditorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000017 /* TodayViewModel.swift */,
+				A10000000000000000000018 /* MonthViewModel.swift */,
+				A10000000000000000000019 /* SettingsViewModel.swift */,
+				A10000000000000000000020 /* HistoryViewModel.swift */,
+				A10000000000000000000021 /* ExpenseEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000009 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000022 /* BudgetReminderScheduler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000001 /* Finanzen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000007 = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000001 /* Finanzen */,
+				A30000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* Finanzen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget "Finanzen" */;
+			buildPhases = (
+				A40000000000000000000001 /* Sources */,
+				A40000000000000000000003 /* Frameworks */,
+				A40000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Finanzen;
+			productName = Finanzen;
+			productReference = A10000000000000000000001 /* Finanzen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXProject "Finanzen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				en,
+				Base,
+			);
+			mainGroup = A30000000000000000000007;
+			productRefGroup = A30000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* Finanzen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A40000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000004 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000001 /* FinanzenApp.swift in Sources */,
+				A20000000000000000000002 /* FinanceStore.swift in Sources */,
+				A20000000000000000000003 /* ContentView.swift in Sources */,
+				A20000000000000000000005 /* TodayView.swift in Sources */,
+				A20000000000000000000006 /* MonthView.swift in Sources */,
+				A20000000000000000000007 /* SettingsView.swift in Sources */,
+				A20000000000000000000010 /* Expense.swift in Sources */,
+				A20000000000000000000011 /* AppTheme.swift in Sources */,
+				A20000000000000000000012 /* TodayExpenseEntry.swift in Sources */,
+				A20000000000000000000013 /* HistoryView.swift in Sources */,
+				A20000000000000000000014 /* ExpenseRow.swift in Sources */,
+				A20000000000000000000015 /* ExpenseEditorView.swift in Sources */,
+				A20000000000000000000016 /* TodayViewModel.swift in Sources */,
+				A20000000000000000000017 /* MonthViewModel.swift in Sources */,
+				A20000000000000000000018 /* SettingsViewModel.swift in Sources */,
+				A20000000000000000000019 /* HistoryViewModel.swift in Sources */,
+				A20000000000000000000020 /* ExpenseEditorViewModel.swift in Sources */,
+				A20000000000000000000021 /* BudgetReminderScheduler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A70000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A70000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A70000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_LANGUAGE = de;
+				DEVELOPMENT_TEAM = QCT86V5J25;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Finanzen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.finanzen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_LANGUAGE = de;
+				DEVELOPMENT_TEAM = QCT86V5J25;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Finanzen;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.finanzen.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60000000000000000000002 /* Build configuration list for PBXNativeTarget "Finanzen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000000000000000000003 /* Debug */,
+				A70000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000003 /* Build configuration list for PBXProject "Finanzen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000000000000000000001 /* Debug */,
+				A70000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60000000000000000000001 /* Project object */;
+}
