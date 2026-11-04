@@ -1,16 +1,18 @@
 # Finanzen
 
-**Finanzen** ist eine native iOS-App zur manuellen Erfassung von Ausgaben und zur Verwaltung eines monatlichen Budgets. Die App ist mit SwiftUI gebaut, auf Deutsch gehalten und speichert ihre Daten lokal auf dem Gerät.
+**Finanzen** ist eine deutschsprachige iOS-App für die persönliche Budgetplanung. Sie hilft dabei, ein Monatsbudget im Blick zu behalten und tägliche Ausgaben manuell zu erfassen. Aus dem noch verfügbaren Monatsbudget berechnet die App ein Tageslimit, das sich an die tatsächlichen Ausgaben anpasst: Nicht verbrauchtes Tagesbudget wird auf die verbleibenden Tage verteilt.
+
+Die App ist mit **SwiftUI** umgesetzt und für iPhone und iPad ausgelegt. Budgets und Ausgaben bleiben auf dem Gerät; ein Konto, eine Bankverbindung oder eine Cloud-Synchronisierung sind nicht erforderlich.
 
 ## Funktionen
 
-- Drei Tabs: **Heute**, **Monat** und **Einstellungen**.
+- Drei Bereiche: **Heute** für das Tagesbudget und die heutigen Ausgaben, **Monat** für Budget und Monatsfortschritt sowie **Einstellungen** für Darstellung und Erinnerungen.
 - Tageslimit, heutige Ausgaben, verbleibender Betrag und das berechnete Limit für morgen.
 - Negative Tagesbeträge werden angezeigt, wenn die Ausgaben das Tageslimit überschreiten.
 - Monatsbudget mit frei wählbarem Startdatum für die tägliche Aufteilung.
 - Monatsfortschritt mit Ausgaben, Restbetrag und Fortschrittsanzeige.
 - Ausgaben manuell erfassen, kategorisieren, mit einer Notiz versehen, bearbeiten und löschen.
-- Verlauf der erfassten Ausgaben.
+- Monatsweise Ausgabenhistorie mit Tagessummen, erreichbar über den Verlauf im Monat-Bereich.
 - Helles, dunkles oder systemgesteuertes Erscheinungsbild.
 - Optionale Erinnerung am Monatsersten um 9 Uhr, ein Monatsbudget festzulegen.
 - Helles, dunkles und getöntes App-Icon in den Asset-Varianten.
