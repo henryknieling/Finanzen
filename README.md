@@ -65,14 +65,40 @@ Jedes Monatsbudget und sein Aufteilungsstart werden getrennt für den jeweiligen
 
 ## Architektur (MVVM)
 
-Die App verwendet **Model–View–ViewModel (MVVM)**:
+Die App ist nach **Model–View–ViewModel (MVVM)** aufgebaut. `FinanzenApp` startet `ContentView`; diese verwaltet die Tab-Navigation und erzeugt den gemeinsamen `FinanceStore`, der an die Finanzansichten weitergegeben wird.
+
+```mermaid
+flowchart TD
+    App[FinanzenApp] --> Root[ContentView]
+    Root --> Today[TodayView]
+    Root --> Month[MonthView]
+    Root --> Settings[SettingsView]
+    Root --> Store[FinanceStore]
+    Today --> TodayVM[TodayViewModel]
+    Month --> MonthVM[MonthViewModel]
+    Month --> History[HistoryView]
+    History --> HistoryVM[HistoryViewModel]
+    Today --> Editor[ExpenseEditorView]
+    History --> Editor
+    Editor --> EditorVM[ExpenseEditorViewModel]
+    Settings --> SettingsVM[SettingsViewModel]
+    TodayVM --> Store
+    MonthVM --> Store
+    HistoryVM --> Store
+    EditorVM --> Store
+    Store --> Defaults[(UserDefaults)]
+    SettingsVM --> Reminder[BudgetReminderScheduler]
+    Root --> Reminder
+```
+
+Die Zuständigkeiten der Schichten:
 
 - **Models und Store:** `Expense` beschreibt eine Ausgabe. `FinanceStore` ist die gemeinsame Quelle für Budgets, Startdaten und Ausgaben. Er kapselt Speicherung, Budgetberechnung und Lösch-Undo.
-- **ViewModels:** `TodayViewModel`, `MonthViewModel`, `SettingsViewModel`, `HistoryViewModel` und `ExpenseEditorViewModel` liegen jeweils in einer eigenen Datei im gemeinsamen Ordner `ViewModels/`. Sie stellen ihren Screens Daten und Aktionen bereit und koordinieren sie mit dem `FinanceStore`.
-- **Views:** Jede SwiftUI-View hat eine eigene Datei unter `Views/`. `ContentView` erstellt den gemeinsamen Store, reicht ihn an die Screens weiter und verwaltet die Tab-Navigation.
-- **Services:** `BudgetReminderScheduler` kapselt die Planung lokaler Benachrichtigungen und liegt getrennt von Modellen, ViewModels und Views.
+- **ViewModels:** `TodayViewModel`, `MonthViewModel`, `SettingsViewModel`, `HistoryViewModel` und `ExpenseEditorViewModel` liegen jeweils in einer eigenen Datei unter `ViewModels/`. Sie bereiten die benötigten Daten und Aktionen für ihre Ansichten auf und koordinieren Änderungen am Store.
+- **Views:** Die SwiftUI-Ansichten liegen unter `Views/`. Sie zeigen den Zustand an und leiten Nutzeraktionen an ihr ViewModel weiter. Der Ausgabenverlauf und die Ausgabeerfassung werden als Ansichten aus dem Heute- beziehungsweise Monat-Bereich geöffnet.
+- **Services:** `BudgetReminderScheduler` liegt unter `Services/` und kapselt die Planung lokaler iOS-Mitteilungen. Er wird von den Einstellungen konfiguriert und beim Start der App bei Bedarf aktualisiert.
 
-Der Datenfluss verläuft damit von der View über ihr ViewModel zum `FinanceStore`. Änderungen am Store werden an die ViewModels weitergereicht, damit betroffene Ansichten aktualisiert werden.
+Der typische Datenfluss verläuft von der View über das ViewModel zum `FinanceStore`. Der Store veröffentlicht Änderungen über `ObservableObject`; dadurch aktualisieren sich die betroffenen Ansichten. Der Store speichert Ausgaben, Monatsbudgets und Budgetstartdaten lokal in `UserDefaults`.
 
 ## Daten und Benachrichtigungen
 
