@@ -60,7 +60,6 @@ Jedes Monatsbudget und sein Aufteilungsstart werden getrennt für den jeweiligen
 │   └── Assets.xcassets/
 │       └── AppIcon.appiconset/      Standard-, Dark- und Tinted-App-Icons
 ├── README.md
-└── todos.md                         Projekt-Checkliste und weitere Aufgaben
 ```
 
 ## Architektur (MVVM)
